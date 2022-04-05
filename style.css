@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital@1&family=Sacramento&display=swap');
+body{
+background-color: #FCC1C2;
+font-family: 'Montserrat', sans-serif;
+}
+
+.center-container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    margin-bottom: 0%;
+    min-height: 80%;
+    max-height: 80%;
+    max-width: 40%;
+    min-width: 75%;
+    border-radius: 3em;
+    z-index: -1;
+
+}
+.image-block{
+    position: fixed;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
+    height: 144px;
+    min-height: 144px;
+    width: 144px;
+    min-width: 144px;
+}
+p{
+    position: fixed;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5em;
+}
+.button{
+    position: fixed;
+    left: 50%;
+    top: 69%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+.end{
+    position: fixed;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+a:hover{
+    color: purple;
+}
+
+
+
+
+
+
+
+
+/* Button CSS*/ /* Button CSS*/ /* Button CSS*/ /* Button CSS*/
+.cta {
+    border: none;
+    background: none;
+   }
+   
+   .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+   /* Button CSS ENDSSSSSSSSS*/
+   @media screen and (max-width: 920px) {
+    p {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    .mid-div {
+        display: flex;
+        margin: 40px 0;
+    }
+}
