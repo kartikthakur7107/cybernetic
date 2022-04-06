@@ -37,6 +37,8 @@ p{
     font-size: 1.5rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
 }
 h3{
         position: fixed;
@@ -44,6 +46,7 @@ h3{
         top: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.5em;
+        text-align: center;
 }
 .button{
     position: fixed;
@@ -58,6 +61,7 @@ h3{
     top: 95%;
     transform: translate(-50%, -50%);
     text-decoration: none;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -69,7 +73,7 @@ a:hover{
 }
 
 
-
+    
 
 
 
