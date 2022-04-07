@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital@1&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital@1&family=Sacramento&display=swap');
 body{
 background-color: #FCC1C2;
 font-family: 'Montserrat', sans-serif;
+font-size: 1em;
 }
 
 .center-container{
@@ -13,8 +14,8 @@ font-family: 'Montserrat', sans-serif;
     margin-bottom: 0%;
     min-height: 80%;
     max-height: 80%;
-    max-width: 40%;
-    min-width: 75%;
+    max-width: 85%;
+    min-width: 85%;
     border-radius: 3em;
     z-index: -1;
 
@@ -38,6 +39,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 300px;
     
 }
 h3{
@@ -47,6 +49,7 @@ h3{
         transform: translate(-50%, -50%);
         font-size: 1.5em;
         text-align: center;
+        width: 10em;
 }
 .button{
     position: fixed;
@@ -71,8 +74,6 @@ a{
 a:hover{
     color: purple;
 }
-
-
     
 
 
@@ -80,56 +81,112 @@ a:hover{
 
 
 /* Button CSS*/ /* Button CSS*/ /* Button CSS*/ /* Button CSS*/
-.cta {
-    border: none;
-    background: none;
-   }
-   
-   .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 10px;
-    padding-right: 15px;
-    text-transform: uppercase;
-   }
-   
-   .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active svg {
-    transform: scale(0.9);
-   }
-   
-   .hover-underline-animation {
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
     position: relative;
-    color: black;
-    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
    }
    
-   .hover-underline-animation:after {
-    content: "";
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
     position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
    }
    
-   .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
    }
-   /* Button CSS ENDSSSSSSSSS*/
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: black;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+   /*Css button ENDSSSSSSS*/
+   
    @media screen and (max-width: 920px) {
     p {
         margin-top: 30px;
@@ -137,6 +194,6 @@ a:hover{
     }
     .mid-div {
         display: flex;
-        margin: 40px 0;
+        margin: px 0;
     }
 }
