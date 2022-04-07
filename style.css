@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Poppins:wght@700&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital@1&family=Sacramento&display=swap');
 body{
-background-color: #FCC1C2;
+background-color: #66b2b2;
 font-family: 'Montserrat', sans-serif;
 font-size: 1em;
 }
@@ -39,7 +39,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 300px;
+    width: 25rem;
     
 }
 h3{
@@ -65,6 +65,7 @@ h3{
     transform: translate(-50%, -50%);
     text-decoration: none;
     text-align: center;
+    font-size: 0.9rem;
 }
 a{
     text-decoration: none;
@@ -74,8 +75,12 @@ a{
 a:hover{
     color: purple;
 }
-    
-
+.text{
+    width: 7.5rem;
+}
+.mid-div{
+    font-weight: 650;
+}
 
 
 
